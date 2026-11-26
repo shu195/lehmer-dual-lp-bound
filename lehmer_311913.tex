@@ -121,17 +121,17 @@ $\mathbf{1{,}000{,}000}$ & $\mathbf{78{,}496}$ & $\mathbf{158{,}427}$ & $\mathbf
 \label{fig:conv}
 \end{figure}
 
-\begin{figure}[htbp]
+Using HiGHS to compute dual vectors and verifying every inequality in $50$-digit directed-rounding \texttt{Decimal} arithmetic and exact arbitrary-precision integer arithmetic scaled by $10^{12}$ (script \texttt{verify\_lehmer\_1M\_strict.py}, zero IEEE-754 float trust), we obtain $\omega(n) \ge 53{,}826$ and $\log_{10}(n) > 311{,}913.23$ at $X = 1{,}000{,}000$, proving Theorem~\ref{thm:main}. Unlike Giuga's conjecture (which saturates the No-Divisor-Chain DAG at $X \approx 321{,}000$), the Lehmer $M \ge 3$ greedy set remains strictly below $\ln 3$ past $X = 500{,}000$, so scaling $X$ further yields continued gains.
+
+\newpage
+\begin{figure}[!t]
 \centering
 \includegraphics[width=0.80\textwidth]{figures/fig2_lehmer_comparison.pdf}
 \caption{Comparison of lower bounds on $\omega(n)$ for Lehmer's totient problem in the $M \ge 3$ regime.}
 \label{fig:comp}
 \end{figure}
 
-Using HiGHS to compute dual vectors and verifying every inequality in $50$-digit directed-rounding \texttt{Decimal} arithmetic and exact arbitrary-precision integer arithmetic scaled by $10^{12}$ (script \texttt{verify\_lehmer\_1M\_strict.py}, zero IEEE-754 float trust), we obtain $\omega(n) \ge 53{,}826$ and $\log_{10}(n) > 311{,}913.23$ at $X = 1{,}000{,}000$, proving Theorem~\ref{thm:main}. Unlike Giuga's conjecture (which saturates the No-Divisor-Chain DAG at $X \approx 321{,}000$), the Lehmer $M \ge 3$ greedy set remains strictly below $\ln 3$ past $X = 500{,}000$, so scaling $X$ further yields continued gains.
-
 % =====================================================================
-\clearpage
 \begin{thebibliography}{9}
 
 \bibitem{Lehmer1932}
